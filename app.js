@@ -9,6 +9,8 @@ const errorResponser = require("./modules/errorResponseConfigure");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 
+const playApiRouter = require("./routes/api/play");
+
 var app = express();
 
 // view engine setup
@@ -28,6 +30,7 @@ app.use(express.static(path.join(__dirname, "public")));
 /**
  * Rutas del API
  */
+app.use("/api/play", playApiRouter);
 
 /**
  * Rutas del Website

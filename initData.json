@@ -1,0 +1,23 @@
+{
+  "plays": [
+    {
+      "code": "abcd1990",
+      "assigned": true,
+      "playName": "Cementerio",
+      "users": [],
+      "phase": 1
+    },
+    {
+      "code": "alex1988",
+      "assigned": false,
+      "users": [],
+      "phase": 3
+    },
+    {
+      "code": "mabel1990",
+      "assigned": false,
+      "users": [],
+      "phase": 1
+    }
+  ]
+}
