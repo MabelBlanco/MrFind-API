@@ -10,7 +10,7 @@ router.get("/:playCode", async (req, res, next) => {
 
     const play = await Play.findOne({ code: `${playCode}` });
 
-    if (play.assigned === false || !play.code) {
+    if (!play || play.assigned === false) {
       const error = createError(
         401,
         "Este código no corresponde a ningún juego"
